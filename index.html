@@ -1,11 +1,29 @@
-<!DOCTYPE html>
-<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>검색 사이트 추천 리스트</title>
+    
+    <!-- SEO 기본 메타 태그 -->
+    <title>검색 사이트 추천 리스트 - 용도별 최고의 검색엔진 모음</title>
+    <meta name="description" content="구글, 네이버, 다음, 덕덕고 등 목적과 용도에 맞는 최적의 웹 검색 엔진과 사이트 추천 리스트를 확인해보세요.">
+    <meta name="keywords" content="검색 사이트 추천, 검색엔진, 구글, 네이버, 다음, 덕덕고, 웹사이트 추천">
+    <meta name="author" content="Search Recommendation List">
+    
+    <!-- 검색엔진 로봇 수집 허용 설정 -->
+    <meta name="robots" content="index, follow">
+
+    <!-- 오픈 그래프(Open Graph) - 소셜 미디어 공유 최적화 (카카오톡, 페이스북 등) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="검색 사이트 추천 리스트">
+    <meta property="og:description" content="구글, 네이버, 다음, 덕덕고 등 용도별 최고의 검색엔진을 한눈에 비교하고 방문하세요.">
+    <meta property="og:site_name" content="검색 사이트 추천">
+
+    <!-- 트위터 카드 (Twitter Card) -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="검색 사이트 추천 리스트">
+    <meta name="twitter:description" content="목적에 맞는 최적의 웹 검색 엔진 추천 리스트">
+
+    <!-- 스타일시트 (CSS) -->
     <style>
-        /* 기본 스타일 초기화 */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -20,7 +38,6 @@
             padding: 40px 20px;
         }
 
-        /* 메인 컨테이너 박스 */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -30,7 +47,6 @@
             padding: 40px;
         }
 
-        /* 헤더 영역 */
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -47,14 +63,12 @@
             font-size: 15px;
         }
 
-        /* 카드 리스트 레이아웃 */
         .search-grid {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        /* 개별 추천 카드 */
         .search-card {
             display: flex;
             align-items: center;
@@ -83,7 +97,6 @@
             color: #555555;
         }
 
-        /* 버튼 스타일 */
         .btn {
             background-color: #1a73e8;
             color: #ffffff;
@@ -100,7 +113,6 @@
             background-color: #1557b0;
         }
 
-        /* 푸터 영역 */
         footer {
             text-align: center;
             margin-top: 40px;
@@ -109,54 +121,3 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🔍 검색 사이트 추천 리스트</h1>
-            <p>목적과 용도에 맞는 최적의 웹 검색 엔진을 찾아보세요.</p>
-        </header>
-
-        <div class="search-grid">
-            <!-- Google -->
-            <div class="search-card">
-                <div class="search-info">
-                    <h3>Google (구글)</h3>
-                    <p>전 세계에서 가장 방대한 데이터를 바탕으로 정확한 웹사이트와 정보를 제공합니다.</p>
-                </div>
-                <a href="https://www.google.com" target="_blank" class="btn">방문하기</a>
-            </div>
-
-            <!-- Naver -->
-            <div class="search-card">
-                <div class="search-info">
-                    <h3>Naver (네이버)</h3>
-                    <p>국내 사용자에게 특화된 블로그, 카페, 지식iN 등 다양한 한국어 맞춤 콘텐츠를 제공합니다.</p>
-                </div>
-                <a href="https://www.naver.com" target="_blank" class="btn">방문하기</a>
-            </div>
-
-            <!-- Daum -->
-            <div class="search-card">
-                <div class="search-info">
-                    <h3>Daum (다음)</h3>
-                    <p>뉴스, 카페, 증권 등 편리한 종합 포털 서비스와 깔끔한 검색 환경을 제공합니다.</p>
-                </div>
-                <a href="https://www.daum.net" target="_blank" class="btn">방문하기</a>
-            </div>
-
-            <!-- DuckDuckGo -->
-            <div class="search-card">
-                <div class="search-info">
-                    <h3>DuckDuckGo (덕덕고)</h3>
-                    <p>사용자의 검색 기록을 추적하지 않는 강력한 프라이버시 보호 중심의 검색 엔진입니다.</p>
-                </div>
-                <a href="https://duckduckgo.com" target="_blank" class="btn">방문하기</a>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2026 Search Recommendation List. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
-</html>
